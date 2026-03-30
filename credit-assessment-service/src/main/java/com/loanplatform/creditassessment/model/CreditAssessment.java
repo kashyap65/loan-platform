@@ -43,10 +43,12 @@ public class CreditAssessment {
     @Column(name = "employment_type", nullable = false)
     private String employmentType;
 
-    @Column(name = "debt_to_income_ratio", nullable = false)
+    @Column(name = "debt_to_income_ratio", nullable = false,
+            precision = 10, scale = 4)
     private BigDecimal debtToIncomeRatio;
 
-    @Column(name = "loan_to_income_ratio", nullable = false)
+    @Column(name = "loan_to_income_ratio", nullable = false,
+            precision = 10, scale = 4)
     private BigDecimal loanToIncomeRatio;
 
     @Enumerated(EnumType.STRING)
