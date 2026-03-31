@@ -6,6 +6,7 @@ dependencies {
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-starter-bootstrap'
     runtimeOnly 'org.postgresql:postgresql'
-    implementation 'org.flywaydb:flyway-core'
+    implementation "org.flywaydb:flyway-core:${flywayVersion}"
+    implementation "org.flywaydb:flyway-database-postgresql:${flywayVersion}"
     implementation 'org.springframework.kafka:spring-kafka'
 }
